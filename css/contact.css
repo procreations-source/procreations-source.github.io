@@ -1,0 +1,326 @@
+/* contact */
+
+#contact {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+}
+
+.page-contact {
+    margin: 0;
+    display: flex;
+    height: 100%;
+}
+
+.contact-hey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    flex: 2;
+    height: 110%;
+    color: #292929;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+    height: 100%;
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.2s;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px 0;
+    width: 100%;
+}
+
+.contact-title {
+    font-family: "rajdhani-bold";
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff83;
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.3s;
+    margin-bottom: 20px;
+}
+
+.m-contact-title {
+    width: 80%;
+    font-family: "rajdhani-bold";
+    text-align: center;
+    color: #fff;
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.3s;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contact-title b {
+    color: #ffc95c;
+}
+
+.m-contact-title b {
+    color: #ffc95c;
+}
+
+.btn-hire {
+    background-color: rgba(17, 17, 17, 0.705);
+    color: #666666;
+    padding: 8px 25px;
+    font-family: "rajdhani-bold";
+    transition: ease-out 0.3s;
+    text-decoration: none;
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.4s;
+}
+
+.btn-hire:hover {
+    background-color: rgb(17, 17, 17);
+    color: rgb(199, 199, 199);
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.btn-hire:active {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    transition: ease-in 0.3s;
+}
+
+.mail {
+    margin: 0 10px;
+}
+
+#email {
+    background-color: transparent;
+    border: 0px solid transparent;
+    outline: none;
+    color: #f4f4f4;
+    font-family: "rajdhani-bold";
+    width: 100%;
+    cursor: default;
+    text-decoration: none;
+    min-width: 230px;
+    font-size: 0.9em;
+}
+
+.email {
+    height: 31px;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 0;
+    font-family: "rajdhani-bold";
+    border: 3px solid #999;
+    font-size: 1.2em;
+}
+
+.email b {
+    background-color: #999;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    padding: 0 10px 0 10px;
+    width: 100%;
+}
+
+.bg {
+    width: 100%;
+    background-color: transparent;
+    height: 30px;
+    position: absolute;
+    max-width: 450px;
+}
+
+.download-hire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.m-download-hire {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.hire {
+    background-color: #ffc95c;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #1D1D1D;
+    padding: 20px 0;
+    font-family: "rajdhani-bold";
+    font-size: 1.8em;
+    transition: ease-out 0.3s;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 10px;
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.4s;
+
+}
+
+.hire:hover {
+    transition: ease-in 0.3s;
+    background-color: #ffc95c;
+    color: #1D1D1D;
+}
+
+.hire:active {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: ease-in 0.3s;
+}
+
+.skype {
+    background-color: #FFF;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #1D1D1D;
+    padding: 20px 0px;
+    font-family: "rajdhani-bold";
+    font-size: 1.8em;
+    transition: ease-out 0.3s;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-right: 10px;
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.3s;
+}
+
+.m-skype {
+    background-color: #FFF;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #1D1D1D;
+    padding: 5px 0;
+    font-family: "rajdhani-bold";
+    font-size: 1.8em;
+    transition: ease-out 0.3s;
+    text-decoration: none;
+    margin-top: 5px;
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.3s;
+}
+
+.m-hire {
+    background-color: #ffc95c;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #1D1D1D;
+    padding: 5px 0;
+    font-family: "rajdhani-bold";
+    font-size: 1.8em;
+    transition: ease-out 0.3s;
+    text-decoration: none;
+    margin-top: 5px;
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.4s;
+}
+
+.skype:hover {
+    transition: ease-in 0.3s;
+    background-color: #fff;
+    color: #1D1D1D;
+}
+
+.skype:active {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: ease-in 0.3s;
+}
+
+.services-text {
+    font-family: "rajdhani-medium";
+    font-size: 1.3em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.651);
+    background-color: rgba(0, 0, 0, 0.712);
+    padding: 25px;
+    max-width: 20%;
+    z-index: 1;
+    position: absolute;
+    -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.3s;
+    transition: ease-in 0.3s;
+
+}
+
+.videobg {
+    -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 0.1s;
+}
+
+.services-text:hover {
+    color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(0, 0, 0, 0.911);
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+.s-text {
+    display: flex;
+    background: #000000;
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-cover {
+    background-image: url('../img/contact/abstract-cover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}

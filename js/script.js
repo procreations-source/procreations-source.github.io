@@ -1,268 +1,203 @@
-$(document).ready(function() {
-  "use strict";
-  $(".section").height(window.outerHeight);
-  $(".nav-item, .discover").on("click", function() {
-    $("html, body").animate(
-      {
-        scrollTop: $($(this).attr("href")).offset().top + 1
-      },
-      900,
-      "easeInOutExpo"
-    );
-    return false;
-  });
+function replace() {
+  document.getElementById("cover").classList.add("disable-cover");
+  document.getElementById("cover").style.display = "none";
+  document.getElementById("essence").style.display = "block";
+  document.getElementById("ab").classList.add("selected-page");
+  document.getElementById("about").style.display = "flex";
+  document.getElementById("creations").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+}
+function cover() {
+  document.getElementById("cover").style.display = "flex";
+  document.getElementById("essence").style.display = "none";
+  document.getElementById("co").classList.remove("selected-page");
+  document.getElementById("ab").classList.remove("selected-page");
+  document.getElementById("cr").classList.remove("selected-page");
+}
 
-  $(window).on("scroll", function() {
-    $(".section").each(function() {
-      if ($(window).scrollTop() > $(this).offset().top) {
-        var sectionId = $(this).attr("id");
-        $('.nav-item[href="' + "#" + sectionId + '"]')
-          .addClass("active")
-          .siblings()
-          .removeClass("active");
-      }
-    });
-  });
-});
-// slider text start
-var commentSlider = {
-  config: {
-    container: $("#wrapper")
+function about() {
+  document.getElementById("about").style.display = "flex";
+  document.getElementById("creations").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+
+  document.getElementById("ab").classList.add("selected-page");
+  document.getElementById("cr").classList.remove("selected-page");
+  document.getElementById("co").classList.remove("selected-page");
+}
+function creations() {
+  document.getElementById("creations").style.display = "flex";
+  document.getElementById("about").style.display = "none";
+  document.getElementById("contact").style.display = "none";
+
+  document.getElementById("cr").classList.add("selected-page");
+  document.getElementById("co").classList.remove("selected-page");
+  document.getElementById("ab").classList.remove("selected-page");
+  document.getElementById("cd1").classList.add("cda");
+  document.getElementById("cd2").classList.remove("cda");
+  document.getElementById("creations12").style.display = "flex";
+  document.getElementById("creations34").style.display = "none";
+}
+function contact() {
+  document.getElementById("contact").style.display = "flex";
+  document.getElementById("about").style.display = "none";
+  document.getElementById("creations").style.display = "none";
+
+  document.getElementById("co").classList.add("selected-page");
+  document.getElementById("ab").classList.remove("selected-page");
+  document.getElementById("cr").classList.remove("selected-page");
+}
+
+// video bg
+
+// let video = document.querySelector("video");
+
+// const setVideoDimensions = () => {
+//   if (window.innerWidth / window.innerHeight > 16 / 9) {
+//     video.style.width = "100vw";
+//     video.style.height = "calc(100vw * 9 / 16)";
+//   } else {
+//     video.style.width = "calc(100vh * 16 / 9)";
+//     video.style.height = "100vh";
+//   }
+// };
+
+// window.onresize = setVideoDimensions;
+// setVideoDimensions();
+
+// copy to clipboard
+
+function copy() {
+  var copyText = document.getElementById("email");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}
+
+function okay() {
+  document.getElementById("success").style.display = "none";
+}
+
+var inp = document.getElementById("email");
+inp.addEventListener(
+  "select",
+  function() {
+    this.selectionStart = this.selectionEnd;
   },
+  false
+);
 
-  init: function(config) {
-    if (config && typeof config == "object") {
-      $.extend(commentSlider.config, config);
-    }
+// rea
 
-    //caching dom elements
-    //wrapper
-    commentSlider.$container = commentSlider.config.container;
+function rea1() {
+  document.getElementById("sq1").classList.add("q-fil");
+  document.getElementById("sq2").classList.remove("q-fil");
+  document.getElementById("sq3").classList.remove("q-fil");
+  document.getElementById("sq4").classList.remove("q-fil");
 
-    //all paragraph tags
-    commentSlider.$paragraphs = commentSlider.$container.find("p");
+  document.getElementById("sa1").classList.add("a-fil");
+  document.getElementById("sa2").classList.remove("a-fil");
+  document.getElementById("sa3").classList.remove("a-fil");
+  document.getElementById("sa4").classList.remove("a-fil");
+}
+function rea2() {
+  document.getElementById("sq1").classList.remove("q-fil");
+  document.getElementById("sq2").classList.add("q-fil");
+  document.getElementById("sq3").classList.remove("q-fil");
+  document.getElementById("sq4").classList.remove("q-fil");
 
-    //all li tags
-    commentSlider.$dots = commentSlider.$container.find("ul.dots-wrap > li");
+  document.getElementById("sa1").classList.remove("a-fil");
+  document.getElementById("sa2").classList.add("a-fil");
+  document.getElementById("sa3").classList.remove("a-fil");
+  document.getElementById("sa4").classList.remove("a-fil");
+}
+function rea3() {
+  document.getElementById("sq1").classList.remove("q-fil");
+  document.getElementById("sq2").classList.remove("q-fil");
+  document.getElementById("sq3").classList.add("q-fil");
+  document.getElementById("sq4").classList.remove("q-fil");
 
-    //first li within ul.dots-wrap
-    commentSlider.$firstDot = commentSlider.$container.find(
-      "ul.dots-wrap > li:first-child"
-    );
+  document.getElementById("sa1").classList.remove("a-fil");
+  document.getElementById("sa2").classList.remove("a-fil");
+  document.getElementById("sa3").classList.add("a-fil");
+  document.getElementById("sa4").classList.remove("a-fil");
+}
+function rea4() {
+  document.getElementById("sq1").classList.remove("q-fil");
+  document.getElementById("sq2").classList.remove("q-fil");
+  document.getElementById("sq3").classList.remove("q-fil");
+  document.getElementById("sq4").classList.add("q-fil");
 
-    //first p tag within module wrapper
-    commentSlider.$firstParagraph = commentSlider.$container.find(
-      "p:first-child"
-    );
+  document.getElementById("sa1").classList.remove("a-fil");
+  document.getElementById("sa2").classList.remove("a-fil");
+  document.getElementById("sa3").classList.remove("a-fil");
+  document.getElementById("sa4").classList.add("a-fil");
+}
 
-    //setting first dot with .active class
-    commentSlider.$firstDot.addClass("active-dot");
+function rede() {
+  document.getElementById("des").style.display = "none";
+  document.getElementById("des1").style.display = "flex";
+}
+function serviceBackD() {
+  document.getElementById("des").style.display = "flex";
+  document.getElementById("des1").style.display = "none";
+}
+function reco() {
+  document.getElementById("cod").style.display = "none";
+  document.getElementById("cod1").style.display = "flex";
+}
+function serviceBackC() {
+  document.getElementById("cod").style.display = "flex";
+  document.getElementById("cod1").style.display = "none";
+}
+function remu() {
+  document.getElementById("mul").style.display = "none";
+  document.getElementById("mul1").style.display = "flex";
+}
+function serviceBackM() {
+  document.getElementById("mul").style.display = "flex";
+  document.getElementById("mul1").style.display = "none";
+}
+function ft() {
+  document.getElementById("creations12").style.display = "flex";
+  document.getElementById("creations34").style.display = "none";
+  document.getElementById("cd1").classList.add("cda");
+  document.getElementById("cd2").classList.remove("cda");
+}
+function st() {
+  document.getElementById("creations34").style.display = "flex";
+  document.getElementById("creations12").style.display = "none";
+  document.getElementById("cd2").classList.add("cda");
+  document.getElementById("cd1").classList.remove("cda");
+}
 
-    //setting first paragraph tag with .active class
-    commentSlider.$firstParagraph.addClass("activeText");
+function cc() {
+  var x = document.getElementById("creations12");
+  var y = document.getElementById("creations34");
 
-    //initializing functions and defining their parameters
-    commentSlider.currentItem(commentSlider.$paragraphs, commentSlider.$dots);
-    commentSlider.setActiveDot(commentSlider.$dots);
-    commentSlider.timer();
-  },
-
-  //timer function runs necesary functions every five seconds
-  timer: function() {
-    setInterval(function() {}, 5000);
-  }, //timer function end
-
-  //grabs current numerical class of dot clicked
-  dotNumber: function($dot) {
-    var dotClassArray = [];
-    var dotClassList = dotClassArray.push($dot.attr("class"));
-    var splitArray = dotClassArray.toString().split(" ");
-
-    for (i = 0; i < splitArray.length; i++) {
-      if (splitArray[i] === "dot") {
-        splitArray.splice(i, 1);
-        var dotClickedNumber = splitArray[i];
-        commentSlider.paragraphNumber(
-          dotClickedNumber,
-          commentSlider.$paragraphs
-        );
-      }
-    }
-  }, //end dotNumber
-
-  paragraphNumber: function(dotClickedNumber, $paragraphs) {
-    $paragraphs.each(function() {
-      var $paragraph = $(this);
-      var paragraphClass = $paragraph.attr("class");
-
-      if (paragraphClass === dotClickedNumber) {
-        $paragraph.addClass("activeText");
-        $paragraph
-          .siblings()
-          .removeClass("activeText")
-          .addClass("slideLeft");
-        setTimeout(function() {
-          $paragraph.siblings().removeClass("slideLeft");
-        }, 400);
-      }
-    });
-  }, //end paragraphNumber
-
-  //currentItem function gives every paragraph and dot a numerical class
-  //based on their array position
-  currentItem: function($paragraphs, $dots) {
-    $paragraphs.each(function(i) {
-      var $paragraph = $(this);
-      $paragraph.addClass([] + i);
-    });
-
-    $dots.each(function(i) {
-      var $dot = $(this);
-      $dot.addClass([] + i);
-    });
-  }, //end currentItem
-
-  //setActiveDot adds class active to whichever dot is clicked
-  setActiveDot: function($dots) {
-    $dots.each(function() {
-      var $dot = $(this);
-      $dot.on("click", function() {
-        if ($dot.hasClass("active-dot")) {
-          return false;
-        } else {
-          $dot.addClass("active-dot");
-          $dot.siblings().removeClass("active-dot");
-        }
-        commentSlider.dotNumber($dot);
-      });
-    });
-  } //end setActiveDot
-};
-
-//initializes the entire thing by calling the init function
-$(document).ready(commentSlider.init);
-// slider text start
-// modals
-// modal 1
-$(function() {
-  $(".md-trigger-1").on("click", function() {
-    $(".md-modal-1").addClass("md-show");
-  });
-  $(".md-close").on("click", function() {
-    $(".md-modal-1").removeClass("md-show");
-  });
-});
-// modal 2
-$(function() {
-  $(".md-trigger-2").on("click", function() {
-    $(".md-modal-2").addClass("md-show");
-  });
-  $(".md-close").on("click", function() {
-    $(".md-modal-2").removeClass("md-show");
-  });
-});
-// modal 3
-$(function() {
-  $(".md-trigger-3").on("click", function() {
-    $(".md-modal-3").addClass("md-show");
-  });
-  $(".md-close").on("click", function() {
-    $(".md-modal-3").removeClass("md-show");
-  });
-});
-// modal 4
-$(function() {
-  $(".md-trigger-4").on("click", function() {
-    $(".md-modal-4").addClass("md-show");
-  });
-  $(".md-close").on("click", function() {
-    $(".md-modal-4").removeClass("md-show");
-  });
-});
-// modal 5
-$(function() {
-  $(".md-trigger-5").on("click", function() {
-    $(".md-modal-5").addClass("md-show");
-  });
-  $(".md-close").on("click", function() {
-    $(".md-modal-5").removeClass("md-show");
-  });
-});
-// modal 6
-$(function() {
-  $(".md-trigger-6").on("click", function() {
-    $(".md-modal-6").addClass("md-show");
-  });
-  $(".md-close").on("click", function() {
-    $(".md-modal-6").removeClass("md-show");
-  });
-});
-// modal 7
-$(function() {
-  $(".md-trigger-7").on("click", function() {
-    $(".md-modal-7").addClass("md-show");
-  });
-  $(".md-close").on("click", function() {
-    $(".md-modal-7").removeClass("md-show");
-  });
-});
-// modal 8
-$(function() {
-  $(".md-trigger-8").on("click", function() {
-    $(".md-modal-8").addClass("md-show");
-  });
-  $(".md-close").on("click", function() {
-    $(".md-modal-8").removeClass("md-show");
-  });
-});
-// modals end
-
-$(".email").on("change keyup paste", function() {
-  if ($(this).val()) {
-    $(".icon-paper-plane").addClass("next");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+    y.style.display = "none";
+    document.getElementById("cd1").classList.add("cda");
+    document.getElementById("cd2").classList.remove("cda");
   } else {
-    $(".icon-paper-plane").removeClass("next");
+    x.style.display = "none";
+    y.style.display = "flex";
+    document.getElementById("cd2").classList.add("cda");
+    document.getElementById("cd1").classList.remove("cda");
   }
-});
+}
 
-$(".next-button").hover(function() {
-  $(this).css("cursor", "pointer");
-});
+var texts = new Array();
+texts.push("Text1");
+texts.push("Text2");
 
-$(".next-button.email").click(function() {
-  console.log("Something");
-  $(".email-section").addClass("fold-up");
-  $(".password-section").removeClass("folded");
-});
+var point = 0;
 
-$(".password").on("change keyup paste", function() {
-  if ($(this).val()) {
-    $(".icon-lock").addClass("next");
+function changeText() {
+  $("#cookie-alert .col h3 span").html(texts[point]);
+  if (point < texts.length - 1) {
+    point++;
   } else {
-    $(".icon-lock").removeClass("next");
+    point = 0;
   }
-});
-
-$(".next-button").hover(function() {
-  $(this).css("cursor", "pointer");
-});
-
-$(".next-button.password").click(function() {
-  console.log("Something");
-  $(".password-section").addClass("fold-up");
-  $(".repeat-password-section").removeClass("folded");
-});
-
-$(".repeat-password").on("change keyup paste", function() {
-  if ($(this).val()) {
-    $(".icon-repeat-lock").addClass("next");
-  } else {
-    $(".icon-repeat-lock").removeClass("next");
-  }
-});
-
-$(".next-button.repeat-password").click(function() {
-  console.log("Something");
-  $(".repeat-password-section").addClass("fold-up");
-  $(".success").css("marginTop", 0);
-});
+}
