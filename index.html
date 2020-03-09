@@ -1,507 +1,506 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US">
+<!--<![endif]-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <!-- Font Awesome 5 -->
-    <link href="css/all.css" rel="stylesheet" type="text/css">
-    <!-- Animations & Keyframes -->
-    <link rel="stylesheet" type="text/css" href="css/animista.css">
-    <link rel="stylesheet" type="text/css" href="css/keyframes.css">
-    <!-- Cover Page -->
-    <link rel="stylesheet" type="text/css" href="css/cover.css">
-    <!-- Body Parts -->
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <!-- Main Pages -->
-    <link rel="stylesheet" type="text/css" href="css/about.css">
-    <link rel="stylesheet" type="text/css" href="css/creations.css">
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
-    <!-- Media Queries -->
-    <link rel="stylesheet" type="text/css" href="css/@media-max-width-992px.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="css/tablet.css">
-    <link rel="shortcut icon" type="image/png" href="img/procreations-favicon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
     <title>Procreations&#8482;</title>
+    <link rel="shortcut icon" type="image/png" href="_include/img/icons/procreations-ico.png" />
+
+    <meta name="description" content="Design Studio" />
+
+    <!-- Mobile Specifics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+
+    <!-- Mobile Internet Explorer ClearType Technology -->
+    <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+    <!-- Bootstrap -->
+    <link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="_include/css/main.css" rel="stylesheet">
+
+    <!-- Supersized -->
+    <link href="_include/css/supersized.css" rel="stylesheet">
+    <link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+    <!-- FancyBox -->
+    <link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+    <!-- Font Icons -->
+    <link href="_include/css/fonts.css" rel="stylesheet">
+
+    <!-- Shortcodes -->
+    <link href="_include/css/shortcodes.css" rel="stylesheet">
+
+    <!-- Responsive -->
+    <link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="_include/css/responsive.css" rel="stylesheet">
+
+    <!-- Supersized -->
+    <link href="_include/css/supersized.css" rel="stylesheet">
+    <link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link
+        href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900'
+        rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="#">
+
+    <link rel="apple-touch-icon" href="#">
+    <link rel="apple-touch-icon" sizes="114x114" href="#">
+    <link rel="apple-touch-icon" sizes="72x72" href="#">
+    <link rel="apple-touch-icon" sizes="144x144" href="#">
+
+    <!-- Modernizr -->
+    <script src="_include/js/modernizr.js"></script>
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'Insert Your Code']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <!-- End Analytics -->
+
 </head>
 
+
 <body>
-    <!-- cover-start-->
-    <section id="cover">
-        <h1 class="heading shine-effect">PROCREATIONS</h1>
-        <div class="gradient-divider scale-in-hor-center"></div>
-        <h3 class="dds">DIGITAL DESIGN STUDIO</h3>
-        <div class="switcher">
-            <h3 class="lead">a place where we</h3>
-            <b>
-                <div class="inner-switcher">
-                    draw<br>
-                    design<br>
-                    code<br>
-                    create<br>
-                    love<br>
-                </div>
-            </b>
-        </div>
-        <a class="btn-discover" onclick="replace()">DISCOVER</a>
-    </section>
-    <!-- cover-end -->
 
-    <!-- -{ESSENCE}- -->
-    <section id="essence">
-        <!-- header-start -->
-        <header>
-            <a onclick="cover()" href="#" class="logo"></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <li><a id="ab" onclick="about()">ABOUT</a></li>
-                <li><a id="cr" onclick="creations()">CREATIONS</a></li>
-                <li><a id="co" onclick="contact()">CONTACT</a></li>
-            </ul>
-        </header>
-        <!-- header-end -->
-
-        <!-- CONTENT-START -->
-        <section id="content">
-            <!-- about-start -->
-            <div class="page-about" id="about">
-                <div class="about-wrapper">
-                    <div class="about-wrapper-left">
-                        <div class="profiles">
-                            <div class="profile">
-                                <a class="profile-image piap"><img src="img/profile/ap.png"></a>
-                                <div class="profile-details">
-                                    <a class="name">Aleksandar Pavlović</a>
-                                    <a class="work">user experience design</a>
-                                    <a class="work">user interface design</a>
-                                    <div class="connect">
-                                        <a target="_blank" href="https://www.behance.net/leemuntus"><i
-                                                class="fab fa-behance"></i></a>
-                                        <a target="_blank" href="https://www.deviantart.com/leemuntus"><i
-                                                class="fab fa-deviantart"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile">
-                                <a class="profile-image pian"><img src="img/profile/an.jpg"></a>
-                                <div class="profile-details">
-                                    <a class="name">Anđela Novaković</a>
-                                    <a class="work">graphic design</a>
-                                    <a class="work">print design</a>
-                                    <div class="connect">
-                                        <a target="_blank" href="https://www.behance.net/andjelanovakovic"><i
-                                                class="fab fa-behance"></i></a>
-                                        <a target="_blank" href="https://www.pinterest.com/fireflyb500/"><i
-                                                class="fab fa-pinterest-p"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-wrapper-right">
-                        <div class="about-us">
-                            <div class="slider">
-                                <input onclick="rea1()" class="slider__nav" type="radio" name="slider"
-                                    checked="checked" />
-                                <input onclick="rea2()" class="slider__nav" type="radio" name="slider" />
-                                <input onclick="rea3()" class="slider__nav" type="radio" name="slider" />
-                                <input onclick="rea4()" class="slider__nav" type="radio" name="slider" />
-
-                                <div class="slider__inner">
-                                    <div class="slider__contents">
-                                        <h2 id="sq1" class="slider__caption">Who are we?</h2>
-                                        <p id="sa1" class="slider__txt">We are a freelance couple driven by love of
-                                            design and a passion for simplicity. We are converting ideas into
-                                            experiences that evoke an emotional response.</p>
-                                    </div>
-                                    <div class="slider__contents">
-                                        <h2 id="sq2" class="slider__caption">What we do?</h2>
-                                        <p id="sa2" class="slider__txt">We create digital products and multimedia
-                                            elements and we offer a wide range of services in the field of design and
-                                            coding.</p>
-                                    </div>
-                                    <div class="slider__contents">
-                                        <h2 id="sq3" class="slider__caption">Who we work for?</h2>
-                                        <p id="sa3" class="slider__txt">We help organisations and individuals radically
-                                            improve their websites, apps, or other creations and make inspiring new
-                                            digital products.
-                                        </p>
-                                    </div>
-                                    <div class="slider__contents">
-                                        <h2 id="sq4" class="slider__caption">Why we do this?</h2>
-                                        <p id="sa4" class="slider__txt">Creating opportunities for brands, startups and
-                                            inspiring innovators gives us motivation to continue what we do. </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div id="mobile-about">
-                    <div class="m-content-about">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="ss-profile">
-                                        <div class="ss-profile-inner">
-                                            <a class="ss-profile-image pian"><img src="img/profile/an.jpg"></a>
-                                            <div class="ss-profile-details">
-                                                <a class="ss-name">Anđela Novaković</a>
-                                                <a class="ss-work">graphic & print design</a>
-                                            </div>
-                                        </div>
-                                        <div class="ss-connect">
-                                            <a class="mb" target="_blank"
-                                                href="https://www.behance.net/andjelanovakovic">Behance
-                                            </a>
-                                            <a class="mb" target="_blank"
-                                                href="https://www.pinterest.com/fireflyb500/">Pinterest
-                                            </a>
-                                        </div>
-                                        <div class="slider">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ss-profile">
-                                        <div class="ss-profile-inner">
-                                            <a class="ss-profile-image pian"><img src="img/profile/ap.png"></a>
-                                            <div class="ss-profile-details">
-                                                <a class="ss-name">Aleksandar Pavlović</a>
-                                                <a class="ss-work">ux/ui design</a>
-                                            </div>
-                                        </div>
-                                        <div class="ss-connect">
-                                            <a class="mb" target="_blank"
-                                                href="https://www.behance.net/leemuntus">Behance</a>
-
-                                            <a class="mb" target="_blank"
-                                                href="https://www.deviantart.com/leemuntus">DeviantArt</a>
-                                        </div>
-                                        <div class="slider">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ss-wrapper">
-                                        <h5 class="ss-heading">Who are we?</h5>
-                                        <div class="line"></div>
-                                        <p class="ss-text">We are a freelance couple driven by love of
-                                            design and a passion for simplicity.
-                                            We are converting ideas into
-                                            experiences that evoke an emotional response.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ss-wrapper">
-                                        <h5 class="ss-heading">What we do?</h5>
-                                        <div class="line"></div>
-                                        <p class="ss-text">We create digital products and multimedia
-                                            elements and we offer a wide range of services in the field of design and
-                                            coding.</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ss-wrapper">
-                                        <h5 class="ss-heading">Who we work for?</h5>
-                                        <div class="line"></div>
-                                        <p class="ss-text">We help organisations and individuals radically
-                                            improve their websites, apps, or other creations and make inspiring new
-                                            digital products.</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="ss-wrapper">
-                                        <h5 class="ss-heading">Why we do this?</h5>
-                                        <div class="line"></div>
-                                        <p class="ss-text">Creating opportunities for brands, startups and
-                                            inspiring innovators gives us motivation to continue what we do.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- about-end -->
-
-            <!-- creations-start -->
-            <div id="creations" class="page-creations">
-                <div id="creations12" class="creations-wrapper">
-                    <div class="single-creation">
-                        <div class="scc scc1">
-                            <div class="creation">
-                                <a>PROJECT 01 : DESIGN & CODING</a>
-                            </div>
-                            <a class="add"></a>
-
-                        </div>
-                    </div>
-                    <div class="single-creation">
-                        <div class="scc scc2">
-                            <div class="creation">
-                                <a>PROJECT 02 : DESIGN & CODING</a>
-                            </div>
-                            <a class="add"></a>
-                        </div>
-                    </div>
-                </div>
-                <div id="creations34" class="creations-wrapper">
-                    <div class="single-creation">
-                        <div class="scc scc3">
-                            <div class="creation">
-                                <a>PROJECT 03 : DESIGN & CODING</a>
-                            </div>
-                            <a class="add"></a>
-
-                        </div>
-                    </div>
-                    <div class="single-creation">
-                        <div class="scc scc4">
-                            <div class="creation">
-                                <a>PROJECT 04 : DESIGN & CODING</a>
-                            </div>
-                            <a class="add"></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="creations-control">
-                    <div class="c-dots">
-                        <a id="cd1" class="cdot" onclick="ft()"><i class="fas fa-circle"></i></a>
-                        <a id="cd2" class="cdot" onclick="st()"><i class="fas fa-circle"></i></a>
-                    </div>
-                    <div class="c-pn">
-                        <a onclick="cc()" class="con"><i class="fas fa-chevron-left"></i></a>
-                        <a onclick="cc()" class="con"><i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div id="creations-about">
-                    <!-- Swiper -->
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide project-a">
-                                <div class="project-content">
-                                    <div class="project-cover-1">
-                                    </div>
-                                    <div class="project-name">
-                                        <a>Brooks Brothers | Online store</a>
-                                    </div>
-                                    <div class="creative-fields">
-                                        <a>CREATIVE FIELDS</a>
-                                        <div class="fields">
-                                            Web Design, Typography, UX/UI Design
-                                        </div>
-                                    </div>
-                                    <div class="tools">
-                                        <a>TOOLS</a>
-                                        <div class="used-tools">
-                                            Adobe XD, Figma
-                                        </div>
-                                    </div>
-                                    <div class="design-process">
-                                        <a>Design Process on Behance </a>
-                                        <a class="watch">Watch &nbsp;<i class="fas fa-external-link-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide project-b">
-                                <div class="project-content">
-                                    <div class="project-cover-2">
-                                    </div>
-                                    <div class="project-name">
-                                        <a>Brooks Brothers | Online store</a>
-                                    </div>
-                                    <div class="creative-fields">
-                                        <a>CREATIVE FIELDS</a>
-                                        <div class="fields">
-                                            Web Design, Typography, UX/UI Design
-                                        </div>
-                                    </div>
-                                    <div class="tools">
-                                        <a>TOOLS</a>
-                                        <div class="used-tools">
-                                            Adobe XD, Figma
-                                        </div>
-                                    </div>
-                                    <div class="design-process">
-                                        <a>Design Process on Behance </a>
-                                        <a class="watch">Watch &nbsp;<i class="fas fa-external-link-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide project-a">
-                                <div class="project-content">
-                                    <div class="project-cover-3">
-                                    </div>
-                                    <div class="project-name">
-                                        <a>Brooks Brothers | Online store</a>
-                                    </div>
-                                    <div class="creative-fields">
-                                        <a>CREATIVE FIELDS</a>
-                                        <div class="fields">
-                                            Web Design, Typography, UX/UI Design
-                                        </div>
-                                    </div>
-                                    <div class="tools">
-                                        <a>TOOLS</a>
-                                        <div class="used-tools">
-                                            Adobe XD, Figma
-                                        </div>
-                                    </div>
-                                    <div class="design-process">
-                                        <a>Design Process on Behance </a>
-                                        <a class="watch">Watch &nbsp;<i class="fas fa-external-link-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide project-b">
-                                <div class="project-content">
-                                    <div class="project-cover-4">
-                                    </div>
-                                    <div class="project-name">
-                                        <a>Brooks Brothers | Online store</a>
-                                    </div>
-                                    <div class="creative-fields">
-                                        <a>CREATIVE FIELDS</a>
-                                        <div class="fields">
-                                            Web Design, Typography, UX/UI Design
-                                        </div>
-                                    </div>
-                                    <div class="tools">
-                                        <a>TOOLS</a>
-                                        <div class="used-tools">
-                                            Adobe XD, Figma
-                                        </div>
-                                    </div>
-                                    <div class="design-process">
-                                        <a>Design Process on Behance </a>
-                                        <a class="watch">Watch &nbsp;<i class="fas fa-external-link-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- creations-end -->
-
-            <!-- contact-start -->
-            <div id="contact" class="page-contact">
-                <div class="contact-hey">
-                    <div id="container" class="s-text">
-                        <div class="contact-cover"></div>
-                        <!-- <video class="videobg"
-                            src='https://d2pxo8g26zv991.cloudfront.net/wp-content/uploads/2014/10/HomeVideo_v04_1.mp4'
-                            autoplay muted loop></video> -->
-                        <p class="services-text">
-                            <a id="t1"> Procreations is a design studio,<br> and digital design is an essential part of
-                                our
-                                work, but we would like to emphasize that we are an all-around digital creative.
-                            </a>
-                            <a id="t2">
-                                In order to improve our products we have expanded our
-                                entire skill set and now we offer a wide range of services that continue to grow every
-                                day.
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-wrapper">
-                        <h3 class="contact-title">HEY THERE, NEED HELP WITH YOUR PROJECT?
-                            <b>LET’S TALK!</b></h3>
-                        <div class="contact-box">
-                            <a class="email shine-effect">
-                                <div class="bg"></div>
-                                <b>SEND US AN EMAIL</b>
-                                <input class="mail" type="text" value="procreations.source@gmail.com" id="email"
-                                    spellcheck="false">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a class="btn-hire" onclick="copy()">COPY</a>
-                        </div>
-                        <div class="download-hire">
-                            <a class="skype" href="skype:live:.cid.4a817cf881961975?chat">SKYPE</a>
-                            <a class="hire" href="mailto:procreations.source@gmail.com">HIRE US</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="contact-about">
-                    <a class="oe">procreations.source@gmail.com &nbsp;<i class="fas fa-envelope"></i></a>
-
-                    <h3 class="m-contact-title"><b>LET'S &nbsp;</b>TALK!</h3>
-                    <div class="m-download-hire">
-                        <a class="m-skype" href="skype:live:.cid.4a817cf881961975?chat">SKYPE</a>
-                        <a class="m-hire" href="mailto:procreations.source@gmail.com">HIRE US</a>
-                    </div>
-                </div>
-            </div>
-            <!-- contact-end -->
-            </div>
+    <!-- This section is for Splash Screen -->
+    <div class="ole">
+        <section id="jSplash">
+            <div id="circle"></div>
         </section>
-        <!-- CONTENT-END -->
+    </div>
+    <!-- End of Splash Screen -->
 
-        <!-- footer-start -->
-        <footer>
-            <div class="copyright">
-                <a>Copyright 2020 Procreations. All rights reserved.</a>
-                <p>Copyright 2020 Procreations</p>
-            </div>
-            <div class="language">
-                <a>SR</a>
-                <a class="selected-language">EN</a>
-            </div>
-        </footer>
-        <!-- footer-end -->
+    <!-- Homepage Slider -->
+    <div id="home-slider">
+        <div class="overlay"></div>
 
-    </section>
-    <!-- -{ESSENCE}- -->
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        });
-    </script>
-    <script>
-        var swiperH = new Swiper('.swiper-container-h', {
-            spaceBetween: 50,
-            pagination: {
-                el: '.swiper-pagination-h',
-                clickable: true,
-            },
-        });
-        var swiperV = new Swiper('.swiper-container-v', {
-            direction: 'vertical',
-            spaceBetween: 50,
-            pagination: {
-                el: '.swiper-pagination-v',
-                clickable: true,
-            },
-        });
-    </script>
+        <div class="slider-text">
+            <div id="slidecaption"></div>
+        </div>
+
+        <div class="control-nav">
+            <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+            <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+            <ul id="slide-list"></ul>
+
+            <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+        </div>
+    </div>
+    <!-- End Homepage Slider -->
+
+    <!-- Header -->
+    <header>
+        <div class="sticky-nav">
+            <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+
+            <div id="logo">
+                <a id="goUp" href="#home-slider">PROCREATIONS</a>
+            </div>
+
+            <nav id="menu">
+                <ul id="menu-nav">
+                    <!-- <li class="current"><a href="#home-slider">Home</a></li> -->
+                    <li><a id="goWork" href="#work" target="_blank">Our Work</a></li>
+                    <li><a id="goAbout" href="#about">About Us</a></li>
+                    <li><a id="goContact" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Our Work Section -->
+    <div id="work" class="page">
+        <div class="container">
+            <!-- Title Page -->
+            <div class="row">
+                <div class="span12">
+                    <div class="title-page">
+                        <h2 class="title">Our Work</h2>
+                        <h3 class="title-description">Check Out Our Projects And Multimedia Elements.</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title Page -->
+
+            <!-- Portfolio Projects -->
+            <div class="row">
+                <div class="span3">
+                    <!-- Filter -->
+                    <nav id="options" class="work-nav">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                            <li class="type-work">Type of Work</li>
+                            <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+                            <li><a href="#filter" data-option-value=".design">Design</a></li>
+                            <li><a href="#filter" data-option-value=".photography">Photography</a></li>
+                            <li><a href="#filter" data-option-value=".video">Video</a></li>
+                        </ul>
+                    </nav>
+                    <!-- End Filter -->
+                </div>
+
+                <div class="span9">
+                    <div class="row">
+                        <section id="projects">
+                            <ul id="thumbs">
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 design">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City"
+                                        href="_include/img/work/full/image-01-full.jpg">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-01.jpg"
+                                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 design">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office"
+                                        href="_include/img/work/full/image-02-full.jpg">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-02.jpg"
+                                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 photography">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains"
+                                        href="_include/img/work/full/image-03-full.jpg">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-03.jpg"
+                                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 video">
+                                    <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                                    <a class="hover-wrap fancybox-media" data-fancybox-group="video"
+                                        title="Video Content From Vimeo" href="http://vimeo.com/51460511">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-08.jpg" alt="Video">
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 photography">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea"
+                                        href="_include/img/work/full/image-04-full.jpg">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-04.jpg"
+                                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 photography">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds"
+                                        href="_include/img/work/full/image-05-full.jpg">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-05.jpg"
+                                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 video">
+                                    <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                                    <a class="hover-wrap fancybox-media" data-fancybox-group="video"
+                                        title="Video Content From Vimeo" href="http://vimeo.com/50834315">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 design">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark"
+                                        href="_include/img/work/full/image-06-full.jpg">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-06.jpg"
+                                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                </li>
+                                <!-- End Item Project -->
+
+                                <!-- Item Project and Filter Name -->
+                                <li class="item-thumbs span3 design">
+                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach"
+                                        href="_include/img/work/full/image-07-full.jpg">
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <!-- Thumb Image and Description -->
+                                    <img src="_include/img/work/thumbs/image-07.jpg"
+                                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                                </li>
+                                <!-- End Item Project -->
+                            </ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Portfolio Projects -->
+        </div>
+    </div>
+    <!-- End Our Work Section -->
+
+    <!-- About Section -->
+    <div id="about" class="page-alternate">
+        <div class="container">
+            <!-- Title Page -->
+            <div class="row">
+                <div class="span12">
+                    <div class="title-page">
+                        <h2 class="title">About Us</h2>
+                        <h3 class="title-description">A Duo Sharing a Passion</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title Page -->
+
+            <!-- People -->
+            <div class="row">
+
+                <!-- Start Profile -->
+                <div class="span6 profile">
+                    <div class="image-wrap">
+                        <div class="hover-wrap">
+                            <span class="overlay-img"></span>
+                            <span class="overlay-text-thumb">Graphic Designer</span>
+                        </div>
+                        <img src="_include/img/profile/profile-01.jpg" alt="Anđela Novaković">
+                    </div>
+                    <h3 class="profile-name">Anđela Novaković</h3>
+                    <p class="profile-description">My true love for the arts and crafts originated in my early
+                        childhood. I've always expressed myself making things, and now I'm happy to create something new
+                        every day. I love creating visual journeys that evoke an emotional response and capture user's
+                        attention.</p>
+                    <div class="social">
+                        <ul class="social-icons">
+                            <li><a target="_blank" href="https://www.behance.net/andjelanovakovic"><i
+                                        class="font-icon-social-behance"></i></a></li>
+                            <li><a target="_blank" href="https://www.pinterest.com/fireflyb500/"><i
+                                        class="font-icon-social-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Profile -->
+
+                <!-- Start Profile -->
+                <div class="span6 profile">
+                    <div class="image-wrap">
+                        <div class="hover-wrap">
+                            <span class="overlay-img"></span>
+                            <span class="overlay-text-thumb">UX/UI Designer</span>
+                        </div>
+                        <img src="_include/img/profile/profile-03.jpg" alt="Aleksandar Pavlović">
+                    </div>
+                    <h3 class="profile-name">Aleksandar Pavlović</h3>
+                    <p class="profile-description">I'm a UI enthusiast passionate about creating intuitive
+                        and engaging interfaces by employing unique and uncluttered design language.
+                        I design and develop clean, appealing, and functional interfaces that comply with the latest
+                        standards. Driven by love of design and a passion for simplicity.</p>
+                    <div class="social">
+                        <ul class="social-icons">
+                            <li><a target="_blank" href="https://www.behance.net/leemuntus"><i
+                                        class="font-icon-social-behance"></i></a></li>
+                            <li><a target="_blank" href="https://www.deviantart.com/leemuntus"><i
+                                        class="font-icon-social-deviant-art"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Profile -->
+
+            </div>
+            <!-- End People -->
+        </div>
+    </div>
+    <!-- End About Section -->
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="page">
+        <div class="container">
+            <!-- Title Page -->
+            <div class="row">
+                <div class="span12">
+                    <div class="title-page">
+                        <h2 class="title">Get in Touch</h2>
+                        <h3 class="title-description">We’re currently accepting new client projects. Need help? Let's
+                            talk!</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title Page -->
+
+            <!-- Contact Form -->
+            <div class="row">
+                <div class="span9">
+
+                    <form id="contact-form" class="contact-form" action="#">
+                        <p class="contact-name">
+                            <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                        </p>
+                        <p class="contact-email">
+                            <input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                        </p>
+                        <p class="contact-message">
+                            <textarea id="contact_message" placeholder="Your Message" name="message" rows="15"
+                                cols="40"></textarea>
+                        </p>
+                        <p class="contact-submit">
+                            <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                        </p>
+
+                        <div id="response">
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="span3">
+                    <div class="contact-details">
+                        <h3>Contact Details</h3>
+                        <ul>
+                            <li><a class="em">procreations.source@gmail.com</a></li>
+                            <li>Skype: Procreations DDS</li>
+                            <li>+381 61-1580-166</li>
+                            <li>
+                                Procreations Design Studio
+                                <br>
+                                Šumadija District
+                                <br>
+                                Serbia
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact Form -->
+        </div>
+    </div>
+    <!-- End Contact Section -->
+    <!-- Socialize -->
+    <div id="social-area" class="page">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <!-- <nav id="social">
+                        <ul>
+                            <li><a href="http://www.behance.net/" title="Twitter" target="_blank"><span
+                                        class="font-icon-social-twitter"></span></a></li>
+                            <li><a href="http://www.behance.net/" title="Dribbble" target="_blank"><span
+                                        class="font-icon-social-dribbble"></span></a></li>
+                            <li><a href="http://www.behance.net/" title="YouTube" target="_blank"><span
+                                        class="font-icon-social-youtube"></span></a></li>
+                            <li><a href="http://www.behance.net/" title="Behance" target="_blank"><span
+                                        class="font-icon-social-behance"></span></a></li>
+                            <li><a href="http://www.behance.net/" title="Envato" target="_blank"><span
+                                        class="font-icon-social-envato"></span></a></li>
+                            <li><a href="http://www.behance.net/" title="DeviantArt" target="_blank"><span
+                                        class="font-icon-social-deviant-art"></span></a></li>
+                            <li><a href="http://www.behance.net/" title="Pinterest" target="_blank"><span
+                                        class="font-icon-social-pinterest"></span></a></li>
+                        </ul>
+                    </nav> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Socialize -->
+
+    <!-- Footer -->
+    <footer>
+        <p class="credits">Copyright 2020 <a>Procreations</a>&nbsp; All Rights Reserved
+        </p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Back To Top -->
+    <a id="back-to-top" href="#">
+        <i class="font-icon-arrow-simple-up"></i>
+    </a>
+    <!-- End Back to Top -->
+
+
+    <!-- Js -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+    <script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+    <script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+    <script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+    <script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+    <script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+    <script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+    <script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+    <script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+    <script src="_include/js/plugins.js"></script>
+    <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+    <script src="_include/js/main.js"></script> <!-- Default JS -->
+    <!-- End Js -->
+
 </body>
 
 </html>
