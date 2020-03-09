@@ -8,7 +8,8 @@
 .fancybox-wrap object,
 .fancybox-nav,
 .fancybox-nav span,
-.fancybox-tmp {
+.fancybox-tmp
+{
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -29,8 +30,8 @@
 	color: #7F8289;
 	text-shadow: none;
 	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
 }
 
 .fancybox-opened {
@@ -39,12 +40,11 @@
 
 .fancybox-opened .fancybox-skin {
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 
-.fancybox-outer,
-.fancybox-inner {
+.fancybox-outer, .fancybox-inner {
 	position: relative;
 }
 
@@ -65,8 +65,7 @@
 	white-space: nowrap;
 }
 
-.fancybox-image,
-.fancybox-iframe {
+.fancybox-image, .fancybox-iframe {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -77,10 +76,7 @@
 	max-height: 100%;
 }
 
-#fancybox-loading,
-.fancybox-close,
-.fancybox-prev span,
-.fancybox-next span {
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
 	background-image: url('fancybox_sprite.png');
 }
 
@@ -112,13 +108,13 @@
 	z-index: 9000;
 	background-image: none;
 	background-color: #26292E;
-
+	
 	opacity: 0.5;
-
-	-webkit-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-	-moz-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-	-o-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-	transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
+	
+	-webkit-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;	
+	   -moz-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
+		 -o-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
+		    transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
 }
 
 .fancybox-close i {
@@ -133,7 +129,7 @@
 
 .fancybox-close:hover {
 	opacity: 1;
-	background-color: #FFC95C;
+	background-color:#DE5E60;
 }
 
 .fancybox-nav {
@@ -142,9 +138,8 @@
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url('blank.gif');
-	/* helps IE */
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background: transparent url('blank.gif'); /* helps IE */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	z-index: 8040;
 }
 
@@ -168,13 +163,13 @@
 	z-index: 8040;
 	background-image: none;
 	background-color: #26292E;
-
+	
 	opacity: 0.5;
-
-	-webkit-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-	-moz-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-	-o-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
-	transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
+	
+	-webkit-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;	
+	   -moz-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
+		 -o-transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
+		    transition: background 0.1s linear 0s, opacity 0.1s linear 0s;
 }
 
 .fancybox-prev span i {
@@ -200,7 +195,7 @@
 
 .fancybox-nav:hover span {
 	opacity: 1;
-	background-color: #FFC95C;
+	background-color:#DE5E60;
 }
 
 .fancybox-tmp {
@@ -216,7 +211,7 @@
 /* Overlay helper */
 
 .fancybox-lock {
-	margin: 0 !important;
+	margin: 0!important;
 }
 
 .fancybox-overlay {
@@ -253,16 +248,16 @@
 	visibility: visible;
 }
 
-.fancybox-opened .fancybox-title h4 {
+.fancybox-opened .fancybox-title h4{
 	font-size: 24px;
 	font-weight: 300;
-	margin-bottom: 10px;
+	margin-bottom: 10px;	
 }
 
-.fancybox-opened .fancybox-title p {
+.fancybox-opened .fancybox-title p{
 	font-size: 16px;
 	font-weight: 300;
-	margin-bottom: 0;
+	margin-bottom: 0;	
 }
 
 .fancybox-title-float-wrap {
@@ -278,12 +273,11 @@
 	display: inline-block;
 	margin-right: -100%;
 	padding: 2px 20px;
-	background: transparent;
-	/* Fallback for web browsers that doesn't support RGBa */
+	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
 	background: rgba(0, 0, 0, 0.8);
 	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
 	text-shadow: 0 1px 2px #222;
 	color: #FFF;
 	font-weight: bold;
@@ -312,23 +306,22 @@
 }
 
 @media (max-width: 480px) {
-
 	.fancybox-nav span,
 	.fancybox-nav:hover span,
 	.fancybox-close,
 	.fancybox-close:hover {
-		background: transparent;
+		background: transparent;	
 	}
-
+	
 	.fancybox-close i {
 		left: 70px;
-		top: 10px;
+		top: 10px;	
 	}
 }
 
 @media (max-width: 320px) {
 	.fancybox-close i {
 		left: 30px;
-		top: 20px;
+		top: 20px;	
 	}
 }
