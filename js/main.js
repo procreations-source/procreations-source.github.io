@@ -9,10 +9,9 @@
   var cfg = {
       scrollDuration: 800, // smoothscroll duration
       mailChimpURL:
-        "https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc" // mailchimp url
+        "https://procreations.us19.list-manage.com/subscribe/post?u=376c50367c0d559f79c5d80dc&amp;id=028d2cfa73" // mailchimp url
     },
     $WIN = $(window);
-
   // Add the User Agent to the <html>
   // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
   var doc = document.documentElement;
@@ -342,7 +341,7 @@
           error: function() {
             sLoader.slideUp("slow");
             $(".message-warning").html(
-              "Something went wrong. Please try again."
+              "Something went wrong. Please use our email to contact us."
             );
             $(".message-warning").slideDown("slow");
           }
@@ -385,7 +384,7 @@
 
     $.ajaxChimp.translations.es = {
       submit: "Submitting...",
-      0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
+      0: '<i class="fa fa-check"></i> You have successfully subscribed. Thank you!',
       1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
       2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
       3: '<i class="fa fa-warning"></i> E-mail address is not valid.',

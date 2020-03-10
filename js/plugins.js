@@ -1959,16 +1959,14 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
     0 == a.length
       ? (this.$slider = t("<img />").prependTo(this.$mirror))
       : ((this.$slider = a.prependTo(this.$mirror)), (n = !0)),
-      this.$mirror
-        .addClass("parallax-mirror")
-        .css({
-          visibility: "hidden",
-          zIndex: this.zIndex,
-          position: "fixed",
-          top: 0,
-          left: 0,
-          overflow: "hidden"
-        }),
+      this.$mirror.addClass("parallax-mirror").css({
+        visibility: "hidden",
+        zIndex: this.zIndex,
+        position: "fixed",
+        top: 0,
+        left: 0,
+        overflow: "hidden"
+      }),
       this.$slider.addClass("parallax-slider").one("load", function() {
         (h.naturalHeight && h.naturalWidth) ||
           ((h.naturalHeight = this.naturalHeight || this.height || 1),
@@ -6558,7 +6556,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
             a.getAttribute("class") &&
             a.getAttribute("class").indexOf("pswp__scroll-wrap") > -1
           ) &&
-            (b(a) ? a : Cb(a.parentNode, b))
+          (b(a) ? a : Cb(a.parentNode, b))
         );
       },
       Db = {},
