@@ -2834,6 +2834,14 @@ html.no-csstransitions .home-content__main {
     display: none;
 }
 
+.ye {
+    color: #ffc95c;
+}
+
+.ye:hover {
+    color: #fff;
+}
+
 .item-folio__project-link {
     display: block;
     color: #ffffff;
