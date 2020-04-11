@@ -49,6 +49,13 @@
 }
 
 
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/lato-bold.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 @font-face {
@@ -63,7 +70,6 @@
 
 }
 
-
 /*  General CSS*/
 .wrapper {
     width: 1200px;
@@ -73,6 +79,9 @@
 }
 
 
+.robots {
+    font-family: 'Abel', sans-serif;
+}
 
 .feature a,
 .cta a.cta_btn,
@@ -185,7 +194,7 @@ header ul.social li a.gplus {
 .billboard .caption p {
     display: inline-block;
     color: #000;
-    font-family: "avantgardelt-extralight", arial;
+    font-family: 'Abel', sans-serif;
     font-weight: lighter;
     font-size: 35px;
     padding: 20px;

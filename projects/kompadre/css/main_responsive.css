@@ -53,6 +53,47 @@
     src: url("../fonts/k4.otf") format("truetype");
 }
 
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/Abel-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhani-regular';
+    src: url('../fonts/rajdhani/Rajdhani-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhani-bold';
+    src: url('../fonts/rajdhani/Rajdhani-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhani-medium';
+    src: url('../fonts/rajdhani/Rajdhani-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhani-light';
+    src: url('../fonts/rajdhani/Rajdhani-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhani-semi';
+    src: url('../fonts/rajdhani/Rajdhani-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*  Fonts  */
 @font-face {
@@ -187,12 +228,14 @@ header nav ul li a:hover {
 header ul.social {
     float: right;
     list-style: none;
-    margin-top: 23px;
 }
 
 header ul.social li {
     float: left;
     margin-left: 10px;
+    line-height: 80px;
+    color: #fff;
+    font-family: 'Abel', sans-serif;
 }
 
 header ul.social li a {
@@ -251,7 +294,7 @@ header ul.social li a.gplus {
 .billboard .caption p {
     display: inline-block;
     color: rgb(255, 255, 255);
-    font-family: "avantgardelt-extralight", arial;
+    font-family: 'Abel', sans-serif;
     font-weight: lighter;
     font-size: 35px;
     padding: 20px;
@@ -301,7 +344,7 @@ header ul.social li a.gplus {
 .feature h3 {
     margin-bottom: 20px;
     color: #767575;
-    font-family: "lato_bold", arial;
+    font-family: "rajdhani-semi", arial;
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -311,8 +354,8 @@ header ul.social li a.gplus {
 .feature p {
     margin-bottom: 20px;
     color: #9e9e9e;
-    font-family: "lato_regular", arial;
-    font-size: 15px;
+    font-family: "rajdhani-regular", arial;
+    font-size: 18px;
     line-height: 22px;
 
 }
@@ -463,8 +506,8 @@ header ul.social li a.gplus {
 
 .info_details h3 {
     color: #fff;
-    font-family: "lato_bold", arial;
-    font-size: 30px;
+    font-family: "rajdhani-medium", arial;
+    font-size: 32px;
     font-weight: bold;
     font-weight: bold;
     text-transform: uppercase;
@@ -476,8 +519,8 @@ header ul.social li a.gplus {
 
 .info_details p {
     color: #ededed;
-    font-family: "lato_regular", arial;
-    font-size: 16px;
+    font-family: "rajdhani-regular", arial;
+    font-size: 18px;
     max-width: 560px;
     margin: 0 0 3.333333333333333% 40px;
     letter-spacing: 1px;
@@ -508,7 +551,7 @@ header ul.social li a.gplus {
 
 .cta h3 {
     color: #6b6b6b;
-    font-family: "lato_bold", arial;
+    font-family: "rajdhani-medium", arial;
     font-size: 34px;
     font-weight: bold;
     text-transform: uppercase;
@@ -517,7 +560,7 @@ header ul.social li a.gplus {
 
 .cta p {
     color: #7f7c7c;
-    font-family: "lato_regular", arial;
+    font-family: "rajdhani-medium", arial;
     font-size: 17px;
     margin-top: 20px;
     letter-spacing: .5px;
@@ -567,8 +610,8 @@ footer {
 
 footer .rights {
     color: rgb(156, 156, 156);
-    font-family: "lato_regular", arial;
-    font-size: 14px;
+    font-family: "rajdhani-semi", arial;
+    font-size: 15px;
     margin-top: 30px;
     line-height: 25px;
 }

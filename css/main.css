@@ -3988,3 +3988,26 @@ footer .row {
         display: none !important;
     }
 }
+
+.chat {
+    color: #727272;
+    /* background-color: rgb(177, 177, 177); */
+    padding: 6px 15px;
+    border-radius: 1px;
+    border: 1px solid #727272;
+}
+
+.chat:hover {
+    color: rgb(0, 0, 0);
+    background-color: #727272;
+}
+
+.chat:focus {
+    color: rgb(0, 0, 0);
+    background-color: #727272;
+}
+
+.chat:active {
+    color: rgb(0, 0, 0);
+    background-color: #727272;
+}
