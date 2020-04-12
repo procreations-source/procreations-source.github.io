@@ -3990,24 +3990,32 @@ footer .row {
 }
 
 .chat {
-    color: #727272;
-    /* background-color: rgb(177, 177, 177); */
-    padding: 6px 15px;
-    border-radius: 1px;
-    border: 1px solid #727272;
+    color: rgb(177, 177, 177);
+    padding: 3px 13px;
+    border-radius: 2px;
+    background-color: #3E3B32;
+    /* border: 1px solid #3E3B32; */
+    font-size: 13px;
 }
 
 .chat:hover {
-    color: rgb(0, 0, 0);
-    background-color: #727272;
+    color: #fff;
 }
 
 .chat:focus {
-    color: rgb(0, 0, 0);
-    background-color: #727272;
+    color: #121212;
 }
 
 .chat:active {
-    color: rgb(0, 0, 0);
-    background-color: #727272;
+    color: #121212;
+}
+
+.chat-s:hover {
+    background-color: #00AEEC;
+
+}
+
+.chat-v:hover {
+    background-color: #7C59EC;
+
 }
