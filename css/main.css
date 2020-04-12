@@ -4003,11 +4003,11 @@ footer .row {
 }
 
 .chat:focus {
-    color: #121212;
+    color: #fff;
 }
 
 .chat:active {
-    color: #121212;
+    color: #fff;
 }
 
 .chat-s:hover {
