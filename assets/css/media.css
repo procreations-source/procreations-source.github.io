@@ -41,7 +41,9 @@
         background: #FDD56E;
         color: #06070C !important;
     }
-}
+    .mobile-disable {
+        display: none;
+    }
 
 @media (max-width: 992px) {
     .copyright {

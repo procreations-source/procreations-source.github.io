@@ -73,7 +73,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #06070C;
+    background: transparent;
 }
 
 .preloader.preloader-hidden {
@@ -87,9 +87,7 @@ a:hover {
 .preloader .spinner {
     position: absolute;
     top: 50%;
-
     width: 100%;
-
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -325,6 +323,11 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
 }
 
 
